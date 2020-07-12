@@ -55,7 +55,7 @@ Things you may want to cover:
 ## chatテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: fales|
+|body|text|
 |image|string|
 |group_id|integer|null: fales, foreign_key: true|
 |user_id|integer|null: fales, foreign_key: true|
