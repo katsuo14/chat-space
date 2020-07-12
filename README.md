@@ -30,8 +30,6 @@ Things you may want to cover:
 |name|string|null: fales, unique: true|
 |email|string|null: fales, unique: true|
 |password|string||null: fales|
-|group_id|integer|unique: true, foreign_key: true|
-|chat_id|integer|unique: true, foreign_key: true|
 
 ### Association
 - has_many :groups, through: :groups_users, dependent: :destroy
@@ -43,8 +41,6 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: fales, unique: true|
-|user_id|integer|null: fales, unique: true, foreign_key: true|
-|chat_id|integer|unique: true, foreign_key|
 
 ### Association
 - has_many :users, through: :groups_users
